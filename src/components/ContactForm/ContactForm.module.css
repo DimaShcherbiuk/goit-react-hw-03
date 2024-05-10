@@ -36,3 +36,7 @@
   color: #fff;
   background: #4e75ff;
 }
+
+.button:hover {
+  background: #2b53e3;
+}
