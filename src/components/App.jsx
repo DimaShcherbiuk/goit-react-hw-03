@@ -3,6 +3,7 @@ import ContactList from "./ContactList/ContactList";
 import SearchBox from "./SearchBox/SearchBox";
 import InnitContacts from "../contactlist.json";
 import { useState, useEffect } from "react";
+import css from "./App.module.css";
 
 function App() {
   const [contacts, setContacts] = useState(() => {
@@ -33,7 +34,7 @@ function App() {
   }, [visibleContact]);
 
   return (
-    <div>
+    <div className={css.container}>
       <h1>Phonebook</h1>
       <ContactForm onAddContact={addContact} />
       <SearchBox value={search} onSearch={setSearch} />
